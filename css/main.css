@@ -1216,6 +1216,7 @@ pre .javascript .function {
 .posts-collapse .collection-title small {
   color: #bbb;
   margin-left: 5px;
+  font-size: 0%;
 }
 .posts-collapse .collection-title::before {
   background: #bbb;
@@ -1633,7 +1634,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #3bff8b;
+  background: #42f747;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
