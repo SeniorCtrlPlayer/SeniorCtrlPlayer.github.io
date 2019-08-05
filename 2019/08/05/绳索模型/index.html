@@ -57,19 +57,19 @@
   };
 </script>
 
-  <meta name="description" content="\left\{ \begin{eqnarray*} \dot{\rho}&amp;=&amp;-u+v_0\cos\varphi\tag{1}\label{1}\\ \rho\dot{\varphi}&amp;=&amp;-v_0\sin\varphi\tag{2}\label{2} \end{eqnarray*} \right.联立$\eqref{1},\eqref{2}$得：  \rho\dfrac{\mathrm{d}\">
-<meta name="keywords" content="Math,Physics">
+  <meta name="description" content="菜鸟教程(runoob.com)           function draw(){         function drawline(ctx,sx,sy,ex,ey,interval=0){var d=[interval];ctx.beginPath();ctx.setLineDash(d);ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stro">
+<meta name="keywords" content="Math,Physcis">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小船极坐标运动问题，超越曲线">
-<meta property="og:url" content="http://yoursite.com/2019/08/04/test/index.html">
+<meta property="og:title" content="绳索滑体模型">
+<meta property="og:url" content="http://yoursite.com/2019/08/05/绳索模型/index.html">
 <meta property="og:site_name" content="SCP&#39;s Notes">
-<meta property="og:description" content="\left\{ \begin{eqnarray*} \dot{\rho}&amp;=&amp;-u+v_0\cos\varphi\tag{1}\label{1}\\ \rho\dot{\varphi}&amp;=&amp;-v_0\sin\varphi\tag{2}\label{2} \end{eqnarray*} \right.联立$\eqref{1},\eqref{2}$得：  \rho\dfrac{\mathrm{d}\">
+<meta property="og:description" content="菜鸟教程(runoob.com)           function draw(){         function drawline(ctx,sx,sy,ex,ey,interval=0){var d=[interval];ctx.beginPath();ctx.setLineDash(d);ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stro">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-05T17:52:55.898Z">
+<meta property="og:updated_time" content="2019-08-05T17:56:30.718Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小船极坐标运动问题，超越曲线">
-<meta name="twitter:description" content="\left\{ \begin{eqnarray*} \dot{\rho}&amp;=&amp;-u+v_0\cos\varphi\tag{1}\label{1}\\ \rho\dot{\varphi}&amp;=&amp;-v_0\sin\varphi\tag{2}\label{2} \end{eqnarray*} \right.联立$\eqref{1},\eqref{2}$得：  \rho\dfrac{\mathrm{d}\">
-  <link rel="canonical" href="http://yoursite.com/2019/08/04/test/">
+<meta name="twitter:title" content="绳索滑体模型">
+<meta name="twitter:description" content="菜鸟教程(runoob.com)           function draw(){         function drawline(ctx,sx,sy,ex,ey,interval=0){var d=[interval];ctx.beginPath();ctx.setLineDash(d);ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stro">
+  <link rel="canonical" href="http://yoursite.com/2019/08/05/绳索模型/">
 
 
 <script id="page-configurations">
@@ -83,7 +83,7 @@
   };
 </script>
 
-  <title>小船极坐标运动问题，超越曲线 | SCP's Notes</title>
+  <title>绳索滑体模型 | SCP's Notes</title>
   
 
 
@@ -236,7 +236,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/04/test/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/绳索模型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SeniorCtrlPlayer">
@@ -250,7 +250,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">小船极坐标运动问题，超越曲线
+          <h1 class="post-title" itemprop="name headline">绳索滑体模型
 
               
             
@@ -270,7 +270,7 @@
                 
               
 
-              <time title="创建时间：2019-08-04 14:27:15" itemprop="dateCreated datePublished" datetime="2019-08-04T14:27:15+08:00">2019-08-04</time>
+              <time title="创建时间：2019-08-05 22:05:08" itemprop="dateCreated datePublished" datetime="2019-08-05T22:05:08+08:00">2019-08-05</time>
             </span>
           
             
@@ -283,7 +283,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-06 01:52:55" itemprop="dateModified" datetime="2019-08-06T01:52:55+08:00">2019-08-06</time>
+                <time title="修改时间：2019-08-06 01:56:30" itemprop="dateModified" datetime="2019-08-06T01:56:30+08:00">2019-08-06</time>
               </span>
             
           
@@ -299,50 +299,57 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <script type="math/tex; mode=display">
+        <html>
+
+<head><meta name="generator" content="Hexo 3.9.0"> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<canvas id="myCanvas" width="600" height="300" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    function draw(){
+        function drawline(ctx,sx,sy,ex,ey,interval=0){var d=[interval];ctx.beginPath();ctx.setLineDash(d);ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();ctx.closePath();ctx.setLineDash([]);}
+        function drawtrangle(ctx,x1,y1,x2,y2,x3,y3){ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.lineTo(x3,y3);ctx.fill();}
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        //draw y
+        drawline(ctx,300,300,300,20);
+        drawtrangle(ctx,305,20,295,20,300,0);
+        //draw x
+        drawline(ctx,50,200,550,200);
+        drawtrangle(ctx,550,205,550,195,570,200);
+        //曲线
+        //ctx.beginPath();
+        ctx.moveTo(150,0);//起始点
+        var cp1x=300, cp1y=300;
+        var x=450, y=0;//结束点
+        ctx.quadraticCurveTo(cp1x,cp1y,x,y);
+        ctx.stroke();
+        //虚线
+        drawline(ctx,150,200,150,0,10);
+        drawline(ctx,150,0,300,300,250);
+    }
+    draw()
+</script>
+
+</body>
+</html>
+
+<p>已知条件: 物体在绳索上某点的切向加速度为：$a_t=-g\sin\theta$</p>
+<script type="math/tex; mode=display">
 \left\{
-\begin{eqnarray*}
-\dot{\rho}&=&-u+v_0\cos\varphi\tag{1}\label{1}\\
-\rho\dot{\varphi}&=&-v_0\sin\varphi\tag{2}\label{2}
-\end{eqnarray*}
+\begin{align}
+&a_t=\dfrac{\mathrm{d}v}{\mathrm{d}s}\dfrac{\mathrm{d}s}{\mathrm{d}t}=v\dfrac{\mathrm{d}v}{\mathrm{d}s},\tag{1}\label{1}\\
+&\sin\theta=\dfrac{\mathrm{d}y}{\mathrm{d}s}.\tag{2}\label{2}
+\end{align}
 \right.</script><p>联立$\eqref{1},\eqref{2}$得：</p>
 <script type="math/tex; mode=display">
-\rho\dfrac{\mathrm{d}\varphi}{\mathrm{d}\rho}=\dfrac{-v_0\sin\varphi}{-u+v_0\cos\varphi}</script><a id="more"></a>
-<p>分离变量得：</p>
+v\dfrac{\mathrm{d}v}{\mathrm{d}s}=-g\dfrac{\mathrm{d}y}{\mathrm{d}s}\tag{3}</script><p>分离变量得：$v\mathrm{d}v=-g\mathrm{d}y$</p>
 <script type="math/tex; mode=display">
-\begin{aligned}
-\dfrac{\mathrm{d}\rho}{\rho}&=\dfrac{-u+v_0\cos\varphi}{-v_0\sin\varphi}\mathrm{d}\varphi\\
-&=(\dfrac{u}{v_0}\csc\varphi-\cot\varphi)\mathrm{d}{\varphi}
-\end{aligned}</script><p>对于$\int{\csc xdx}$有：</p>
-<script type="math/tex; mode=display">
-\begin{align*}
-\int{\csc x\mathrm{d}x}&=\frac{\mathrm{d}x}{\sin x}\\
-&=\frac{\mathrm{d}x}{2\sin\frac{x}{2}\cos\frac{x}{2}}\\
-&=\frac{\mathrm{d}{(\frac{x}{2})}}{\tan {\frac{x}{2}}\cos^2{\frac{x}{2}}}\\
-&=\frac{1}{\tan{\frac{x}{2}}}\mathrm{d}{(\tan\frac{x}{2})}\\
-&=\ln({\tan{\frac{x}{2}}})+C
-\end{align*}\\</script><p>不定积分为：</p>
-<script type="math/tex; mode=display">
-\left\{
-\begin{array}{lcl}
-\int{\csc x\mathrm{d}{x}}&=&\ln(\tan\frac{x}{2})+C\\
-\int{\cot x\mathrm{d}{x}}&=&\ln(\sin x)+C
-\end{array}\\
-\right.
-\begin{align}
-\ln\rho&=\dfrac{u}{v_0}\int{\csc\varphi\mathrm{d}{\varphi}}-\int{\cot\varphi\mathrm{d}{\varphi}}\\
-&=\dfrac{u}{v_0}\ln(\tan\frac{\varphi}{2})-\ln(\sin\varphi)+C
-\end{align}</script><p>假设小船的起点坐标为$(\rho_0,\varphi_0)$：</p>
-<script type="math/tex; mode=display">
-\begin{array}{lcl}
-\ln\rho-\ln\rho_0&=&\dfrac{u}{v_0}(\ln(\tan\frac{\varphi}{2})-\ln(\tan\frac{\varphi_0}{2}))\\&-&(\ln(\sin\varphi)-\ln(\sin\varphi_0))\\
-\ln\rho-\ln\rho_0&=&\dfrac{u}{v_0}\ln{\dfrac{\tan\frac{\varphi}{2}}{\tan\frac{\varphi_0}{2}}}-\ln\dfrac{\sin\varphi}{\sin\varphi_0}\\
-\ln\frac{\rho}{\rho_0}&=&\ln\left\{(\tan\frac{\varphi}{2}/\tan\frac{\varphi_0}{2})^{\frac{u}{v_0}}\frac{\sin\varphi_0}{\sin\varphi}\right\}
-\end{array}</script><p>所以小船的轨迹方程$f(\rho,\varphi)$为：</p>
-<script type="math/tex; mode=display">
-\begin{array}{}
-\rho=\rho_0\left\{(\tan\frac{\varphi}{2}/\tan\frac{\varphi_0}{2})^{\frac{u}{v_0}}\frac{\sin\varphi_0}{\sin\varphi}\right\}
-\end{array}</script>
+\int\limits_{v_0}^{v}v\mathrm{d}v=-g\int\limits_{y_0}^{y}\mathrm{d}y\\
+v^2-v_0^2=2g(y_0-y)</script>
     </div>
 
     
@@ -353,20 +360,20 @@
         <div class="post-tags">
             <a href="/tags/Math/" rel="tag"><i class="fa fa-tag"></i> Math</a>
           
-            <a href="/tags/Physics/" rel="tag"><i class="fa fa-tag"></i> Physics</a>
+            <a href="/tags/Physcis/" rel="tag"><i class="fa fa-tag"></i> Physcis</a>
           
         </div>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+              <a href="/2019/08/05/C-10/" rel="next" title="Mysterious Bottle">
+                <i class="fa fa-chevron-left"></i> Mysterious Bottle
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-              <a href="/2019/08/04/C-1/" rel="prev" title="The Village by the Forest">
-                The Village by the Forest <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
     </footer>
