@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[引力质量与惯性质量]]></title>
+    <url>%2F2019%2F08%2F06%2F%E5%BC%95%E5%8A%9B%E8%B4%A8%E9%87%8F%E4%B8%8E%E6%83%AF%E6%80%A7%E8%B4%A8%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[惯性质量​ 同样的力施于不同的物体，所引起的加速度大小也不一样，即： \begin{eqnarray} m_a:m_b&=&a_B:a_A\\ m&\propto&\dfrac{1}{a}\tag{1}\label{1} \end{eqnarray}引力质量​ 给定两个质点$A$与$B$，它们各自与同一物体$C$之间的引力$F{AC}$与$F{BC}$，只要$AC$与$BC$相同，则不论距离大小的具体值为多少，也不论$C$的质量有多大，力$F{AC}$与$F{BC}$的比值总是一样的，即： \begin{eqnarray} m_A:m_B&=&F_A:F_B\\ F&\propto& m\tag{2}\label{2} \end{eqnarray}​ 对于物体$m_1$和物体$m_2$他们分别受到引力$F_1$和$F_2$，且在力的大小上$F_1=F_2$，设$F_1,F_2$的大小都为$F$则有： F=F_1\propto m_1\\ F=F_2\propto m_2\\ F\propto m_1m_2统一​ 由伽利略的比萨斜塔实验可知，任一物体$m(m\ll m{earth}?)$其加速度都为常数$g$，由牛二得$g$正比于引力$P$，反比于$m惯$得： g\propto \frac{P}{m_惯}​ 由$\eqref{2}$得： g(常数)\propto \frac{m_引}{m_惯}]]></content>
+      <tags>
+        <tag>Physics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[绳索滑体模型]]></title>
     <url>%2F2019%2F08%2F05%2F%E7%BB%B3%E7%B4%A2%E6%A8%A1%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[菜鸟教程(runoob.com) function draw(){ function drawline(ctx,sx,sy,ex,ey,interval=0){var d=[interval];ctx.beginPath();ctx.setLineDash(d);ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();ctx.closePath();ctx.setLineDash([]);} function drawtrangle(ctx,x1,y1,x2,y2,x3,y3){ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.lineTo(x3,y3);ctx.fill();} var c=document.getElementById("myCanvas"); var ctx=c.getContext("2d"); //draw y drawline(ctx,300,300,300,20); drawtrangle(ctx,305,20,295,20,300,0); //draw x drawline(ctx,50,200,550,200); drawtrangle(ctx,550,205,550,195,570,200); //曲线 //ctx.beginPath(); ctx.moveTo(150,0);//起始点 var cp1x=300, cp1y=300; var x=450, y=0;//结束点 ctx.quadraticCurveTo(cp1x,cp1y,x,y); ctx.stroke(); //虚线 drawline(ctx,150,200,150,0,10); drawline(ctx,150,0,300,300,250); } draw() 已知条件: 物体在绳索上某点的切向加速度为：$a_t=-g\sin\theta$ \left\{ \begin{array}{} a_t=\dfrac{\mathrm{d}v}{\mathrm{d}s}\dfrac{\mathrm{d}s}{\mathrm{d}t}=v\dfrac{\mathrm{d}v}{\mathrm{d}s},\\ \sin\theta=\dfrac{\mathrm{d}y}{\mathrm{d}s}.\tag{1}\label{1} \end{array} \right.联立方程组$\eqref{1}$得： v\dfrac{\mathrm{d}v}{\mathrm{d}s}=-g\dfrac{\mathrm{d}y}{\mathrm{d}s}\tag{2}分离变量得：$v\mathrm{d}v=-g\mathrm{d}y$ \int\limits_{v_0}^{v}v\mathrm{d}v=-g\int\limits_{y_0}^{y}\mathrm{d}y\\ v^2-v_0^2=2g(y_0-y)]]></content>
