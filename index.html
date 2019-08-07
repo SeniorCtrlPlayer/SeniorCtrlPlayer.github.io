@@ -1010,7 +1010,7 @@ m&\propto&\dfrac{1}{a}\tag{1}\label{1}
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-06 08:48:04" itemprop="dateModified" datetime="2019-08-06T08:48:04+08:00">2019-08-06</time>
+                <time title="修改时间：2019-08-08 01:56:13" itemprop="dateModified" datetime="2019-08-08T01:56:13+08:00">2019-08-08</time>
               </span>
             
           
@@ -1026,7 +1026,9 @@ m&\propto&\dfrac{1}{a}\tag{1}\label{1}
     <div class="post-body" itemprop="articleBody">
 
       
-          <script type="math/tex; mode=display">
+          
+            <a id="more"></a>
+<script type="math/tex; mode=display">
 \left\{
 \begin{array}{}
 \dot{\rho}&=-u+v_0\cos\varphi\\
@@ -1034,16 +1036,42 @@ m&\propto&\dfrac{1}{a}\tag{1}\label{1}
 \end{array}
 \right.</script><p>联立$\eqref{1}$得：</p>
 <script type="math/tex; mode=display">
-\rho\dfrac{\mathrm{d}\varphi}{\mathrm{d}\rho}=\dfrac{-v_0\sin\varphi}{-u+v_0\cos\varphi}</script>
-          <!--noindex-->
+\rho\dfrac{\mathrm{d}\varphi}{\mathrm{d}\rho}=\dfrac{-v_0\sin\varphi}{-u+v_0\cos\varphi}</script><p>分离变量得：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\dfrac{\mathrm{d}\rho}{\rho}&=\dfrac{-u+v_0\cos\varphi}{-v_0\sin\varphi}\mathrm{d}\varphi\\
+&=(\dfrac{u}{v_0}\csc\varphi-\cot\varphi)\mathrm{d}{\varphi}
+\end{aligned}</script><p>对于$\int{\csc xdx}$有：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+\int{\csc x\mathrm{d}x}&=\frac{\mathrm{d}x}{\sin x}\\
+&=\frac{\mathrm{d}x}{2\sin\frac{x}{2}\cos\frac{x}{2}}\\
+&=\frac{\mathrm{d}{(\frac{x}{2})}}{\tan {\frac{x}{2}}\cos^2{\frac{x}{2}}}\\
+&=\frac{1}{\tan{\frac{x}{2}}}\mathrm{d}{(\tan\frac{x}{2})}\\
+&=\ln({\tan{\frac{x}{2}}})+C
+\end{align*}\\</script><p>不定积分为：</p>
+<script type="math/tex; mode=display">
+\left\{
+\begin{array}{lcl}
+\int{\csc x\mathrm{d}{x}}&=&\ln(\tan\frac{x}{2})+C\\
+\int{\cot x\mathrm{d}{x}}&=&\ln(\sin x)+C
+\end{array}\\
+\right.
+\begin{array}
+\ln\rho&=\dfrac{u}{v_0}\int{\csc\varphi\mathrm{d}{\varphi}}-\int{\cot\varphi\mathrm{d}{\varphi}}\\
+&=\dfrac{u}{v_0}\ln(\tan\frac{\varphi}{2})-\ln(\sin\varphi)+C
+\end{array}</script><p>假设小船的起点坐标为$(\rho_0,\varphi_0)$：</p>
+<script type="math/tex; mode=display">
+\begin{array}{lcl}
+\ln\rho-\ln\rho_0&=&\dfrac{u}{v_0}(\ln(\tan\frac{\varphi}{2})-\ln(\tan\frac{\varphi_0}{2}))\\&-&(\ln(\sin\varphi)-\ln(\sin\varphi_0))\\
+\ln\rho-\ln\rho_0&=&\dfrac{u}{v_0}\ln{\dfrac{\tan\frac{\varphi}{2}}{\tan\frac{\varphi_0}{2}}}-\ln\dfrac{\sin\varphi}{\sin\varphi_0}\\
+\ln\frac{\rho}{\rho_0}&=&\ln\left\{(\tan\frac{\varphi}{2}/\tan\frac{\varphi_0}{2})^{\frac{u}{v_0}}\frac{\sin\varphi_0}{\sin\varphi}\right\}
+\end{array}</script><p>所以小船的轨迹方程$f(\rho,\varphi)$为：</p>
+<script type="math/tex; mode=display">
+\begin{array}{}
+\rho=\rho_0\left\{(\tan\frac{\varphi}{2}/\tan\frac{\varphi_0}{2})^{\frac{u}{v_0}}\frac{\sin\varphi_0}{\sin\varphi}\right\}
+\end{array}</script>
           
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/08/04/test/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
         
       
     </div>
