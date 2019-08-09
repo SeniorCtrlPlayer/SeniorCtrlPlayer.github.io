@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[变力圆周匀速]]></title>
+    <url>%2F2019%2F08%2F09%2F%E5%8F%98%E5%8A%9B%E5%9C%86%E5%91%A8%E5%8C%80%E9%80%9F%2F</url>
+    <content type="text"><![CDATA[function draw(){ function drawline(ctx,sx,sy,ex,ey,interval=0){var d=[interval];ctx.beginPath();ctx.setLineDash(d);ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();ctx.closePath();ctx.setLineDash([]);} function drawtrangle(ctx,x1,y1,x2,y2,x3,y3){ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.lineTo(x3,y3);ctx.fill();} var c=document.getElementById("Canvas3"); var ctx=c.getContext("2d"); drawline(ctx,300,200,300,300); ctx.beginPath(); ctx.arc(300,200,100,0,2*Math.PI); ctx.stroke(); var theta = Math.PI/3; drawline(ctx,300,200,300+100*Math.sin(theta/2),200-100*Math.cos(theta/2),10); drawline(ctx,300,200,300+100*Math.sin(theta),200+100*Math.cos(theta),10); } draw() 设向心力与竖直下线之间的夹角为θ(0&lt;θ&lt;π)\theta(0&lt;\theta&lt;\pi)θ(0&lt;θ&lt;π)，坐垫提供的支撑力FFF与半径之间的夹角为φ\varphiφ，因为是匀速率圆周运动，设向心力为FrF_rFr​ {Fsin⁡φ=mgsin⁡θFcos⁡φ−mgcos⁡θ=Fr\left\{ \begin{aligned} &amp;F\sin\varphi=mg\sin\theta\\ &amp;F\cos\varphi-mg\cos\theta=F_r \end{aligned} \right. {​Fsinφ=mgsinθFcosφ−mgcosθ=Fr​​ Fcos⁡φ=Fr+mgcos⁡θF2(1−sin⁡2φ)=(Fr+mgcos⁡θ)2F\cos\varphi=F_r+mg\cos\theta\\ F^2(1-\sin^2\varphi)=(F_r+mg\cos\theta)^2 Fcosφ=Fr​+mgcosθF2(1−sin2φ)=(Fr​+mgcosθ)2]]></content>
+      <tags>
+        <tag>Physics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[第二宇宙速度]]></title>
     <url>%2F2019%2F08%2F09%2F%E7%AC%AC%E4%BA%8C%E5%AE%87%E5%AE%99%E9%80%9F%E5%BA%A6%2F</url>
     <content type="text"><![CDATA[∵F引∝1r2设在物体受到地球引力为P∴∣P∣:mg=R2:x2P=−mgR2x2\begin{aligned} \because&amp; F_引\propto\frac{1}{r^2}\\ &amp;设在物体受到地球引力为P \\ \therefore&amp; |P|:mg=R^2:x^2\\ &amp;P=-\frac{mgR^2}{x^2} \end{aligned} ∵∴​F引​∝r21​设在物体受到地球引力为P∣P∣:mg=R2:x2P=−x2mgR2​​ 设物体的加速度为x¨\ddot{x}x¨，则有： −mgR2x2=mx¨∵x¨=dvdt=vdvdx−mgR2x2dx=vdv-\frac{mgR^2}{x^2}=m\ddot{x}\\ \because \ddot{x}=\frac{\mathrm{d}v}{\mathrm{d}t}=v\frac{\mathrm{d}v}{\mathrm{d}x}\\ -\frac{mgR^2}{x^2}{\mathrm{d}x}=v\mathrm{d}v\\ −x2mgR2​=mx¨∵x¨=dtdv​=vdxdv​−x2mgR2​dx=vdv 对上式进行积分，设t=0t=0t=0时初始速度为v0v_0v0​，x0=Rx_0=Rx0​=R ∫Rx−gR2x2dx=∫v0vvdvgR2(1x−1R)=v2−v022v=v02−2gR⏟1+2gR2x⏟2s\int\limits_{R}^{x}-\frac{gR^2}{x^2}{\mathrm{d}x}=\int\limits_{v_0}^{v}v\mathrm{d}v\\ gR^2(\frac{1}{x}-\frac{1}{R})=\frac{v^2-v_0^2}{2}\\ v=\sqrt{\underbrace{v_0^2-2gR}_{1}+\underbrace{\frac{2gR^2}{x}}_{2}}s R∫x​−x2gR2​dx=v0​∫v​vdvgR2(x1​−R1​)=2v2−v02​​v=1v02​−2gR​​+2x2gR2​​​​s 说明： 决定是否能脱离地球，当v0v_0v0​确定后，1为常量 无穷小量，lim⁡x→∞2gR2x=0\lim_{x\to\infty}\frac{2gR^2}{x}=0limx→∞​x2gR2​=0 当v0≥2gRv_0\ge2gRv0​≥2gR时，v&gt;0v&gt;0v&gt;0，物体永远不会改变运动方向， lim⁡x→∞v=v02−2gR\lim_{x\to\infty}v=\sqrt{v_0^2-2gR} x→∞lim​v=v02​−2gR​ 当v0&lt;2gRv_0&lt;2gRv0​&lt;2gR时，物体不能不停地向前运动，在vvv的表达式有意义的条件下，xxx有上限： 0=v02−2gR+2gR2xmaxsxmax=2gsR22gR−v020=\sqrt{v_0^2-2gR+\frac{2gR^2}{x_{max}}s}\\ x_{max}=\dfrac{2gsR^2}{2gR-v_0^2} 0=v02​−2gR+xmax​2gR2​s​xmax​=2gR−v02​2gsR2​]]></content>
