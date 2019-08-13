@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[非惯性系统]]></title>
+    <url>%2F2019%2F08%2F13%2F%E9%9D%9E%E6%83%AF%E6%80%A7%E7%B3%BB%E7%BB%9F%2F</url>
+    <content type="text"><![CDATA[平动参考系 矢径： r=r0+r′\boldsymbol r=\boldsymbol r_0+\boldsymbol r&#x27; r=r0​+r′ 速度： r˙=r˙0+r˙′v=v0+v′\boldsymbol {\dot r}=\boldsymbol {\dot r_0}+\boldsymbol {\dot r}&#x27;\\ \boldsymbol v=\boldsymbol v_0+\boldsymbol v&#x27; r˙=r˙0​+r˙′v=v0​+v′ 加速度： a=a0+a′\boldsymbol a=\boldsymbol a_0+\boldsymbol a&#x27; a=a0​+a′ 受力： F=ma′+ma0{F:质点受到的牛顿力ma′:质点相对于参考系统受到的力ma0:参考系统受到的牛顿力，同时也是质点受到的惯性力\boldsymbol{F}=m \boldsymbol{a}^{\prime}+m \boldsymbol{a}_{0}\\ \left\{ \begin{aligned} F:&amp;质点受到的牛顿力\\ m\boldsymbol{a}^{\prime}:&amp;质点相对于参考系统受到的力\\ m\boldsymbol{a}_{0}:&amp;参考系统受到的牛顿力，\\&amp;同时也是质点受到的惯性力 \end{aligned} \right. F=ma′+ma0​⎩⎪⎪⎪⎪⎨⎪⎪⎪⎪⎧​F:ma′:ma0​:​质点受到的牛顿力质点相对于参考系统受到的力参考系统受到的牛顿力，同时也是质点受到的惯性力​]]></content>
+      <tags>
+        <tag>Physics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[圆的切向微分问题]]></title>
     <url>%2F2019%2F08%2F13%2F%E5%9C%86%E7%9A%84%E5%88%87%E5%90%91%E5%BE%AE%E5%88%86%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[截取皮带中的一小段 {(T+T+dT)sin⁡dθ2=N(T+dT)cos⁡dθ2=Tcos⁡dθ2+ff=uN\left\{ \begin{aligned} &amp;(T+T+dT)\sin\frac{d\theta}{2}=N\\ &amp;(T+dT)\cos\frac{d\theta}{2}=T\cos\frac{d\theta}{2}+f\\ &amp;f=uN\\ \end{aligned} \right. ⎩⎪⎪⎪⎪⎨⎪⎪⎪⎪⎧​​(T+T+dT)sin2dθ​=N(T+dT)cos2dθ​=Tcos2dθ​+ff=uN​ dTcos⁡dθ2=u(2T+dT)sin⁡dθ2lim⁡θ→0cos⁡θ2=1，lim⁡θ→0sin⁡θ2=θ2dT=uTdθ+dTdθ2⏟高阶微量，忽略dTT=udθln⁡T1T0=uθT1=T0euθdT\cos\frac{d\theta}{2}=u(2T+dT)\sin\frac{d\theta}{2}\\ \lim_{\theta\to0}\cos\frac{\theta}{2}=1，\lim_{\theta\to0}\sin\frac{\theta}{2}=\frac{\theta}{2}\\ dT=uTd\theta+\underbrace{\frac{dTd\theta}{2}}_{高阶微量，忽略}\\ \frac{dT}{T}=ud\theta\\ \ln\frac{T_1}{T_0}=u\theta\\ T_1=T_0e^{u\theta} dTcos2dθ​=u(2T+dT)sin2dθ​θ→0lim​cos2θ​=1，θ→0lim​sin2θ​=2θ​dT=uTdθ+高阶微量，忽略2dTdθ​​​TdT​=udθlnT0​T1​​=uθT1​=T0​euθ]]></content>
