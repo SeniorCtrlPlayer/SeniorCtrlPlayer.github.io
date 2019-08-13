@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[转动参考系]]></title>
+    <url>%2F2019%2F08%2F13%2F%E8%BD%AC%E5%8A%A8%E5%8F%82%E8%80%83%E7%B3%BB%2F</url>
+    <content type="text"><![CDATA[试研究地面上物体的重量，所谓重量即静止于地球上的物体施于其承托物的力。 取固定于地球的坐标系。原点在地心，z′z&#x27;z′轴由地心指向物体所在处，x′x&#x27;x′轴指向物体所在处的南方。 设物体的支持力为PPP，将PPP分解为x′x&#x27;x′和z′z&#x27;z′方向 设物体受到的地心引力大小为：GMmR3\frac{G M m}{R^{3}}R3GMm​，方向与z′z&#x27;z′相反，所以为：−GMmR3-\frac{G M m}{R^{3}}−R3GMm​ 设地球自转角速度大小恒定为：ω\omegaω，物体所在维度为：φ\varphiφ 惯性离心力为：mω2Rcos⁡φm \omega^{2} R \cos \varphimω2Rcosφ {Px′=0+mω2Rcos⁡φsin⁡φPz′=−GMmR3+mω2Rcos⁡2φ\left\{ \begin{aligned} P_{x^{\prime}}&amp;=0+m \omega^{2} R \cos \varphi \sin \varphi \\ P_{z^{\prime}}&amp;=-\frac{G M m}{R^{3}}+m \omega^{2} R \cos ^{2} \varphi \end{aligned} \right. ⎩⎨⎧​Px′​Pz′​​=0+mω2Rcosφsinφ=−R3GMm​+mω2Rcos2φ​ 依据方程解PPP，过程略]]></content>
+      <tags>
+        <tag>Physics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[平动参考系]]></title>
     <url>%2F2019%2F08%2F13%2F%E5%B9%B3%E5%8A%A8%E5%8F%82%E8%80%83%E7%B3%BB%2F</url>
     <content type="text"><![CDATA[矢径： r=r0+r′\boldsymbol r=\boldsymbol r_0+\boldsymbol r&#x27; r=r0​+r′ 速度： r˙=r˙0+r˙′v=v0+v′\boldsymbol {\dot r}=\boldsymbol {\dot r_0}+\boldsymbol {\dot r}&#x27;\\ \boldsymbol v=\boldsymbol v_0+\boldsymbol v&#x27; r˙=r˙0​+r˙′v=v0​+v′ 加速度： a=a0+a′\boldsymbol a=\boldsymbol a_0+\boldsymbol a&#x27; a=a0​+a′ 受力： F=ma′+ma0{F:质点受到的牛顿力ma′:质点相对于参考系统受到的力ma0:由参考系统的加速度计算得到，同时也是质点受到的惯性力\boldsymbol{F}=m \boldsymbol{a}^{\prime}+m \boldsymbol{a}_{0}\\ \left\{ \begin{aligned} F:&amp;质点受到的牛顿力\\ m\boldsymbol{a}^{\prime}:&amp;质点相对于参考系统受到的力\\ m\boldsymbol{a}_{0}:&amp;由参考系统的加速度计算得到，\\&amp;同时也是质点受到的惯性力 \end{aligned} \right. F=ma′+ma0​⎩⎪⎪⎪⎪⎨⎪⎪⎪⎪⎧​F:ma′:ma0​:​质点受到的牛顿力质点相对于参考系统受到的力由参考系统的加速度计算得到，同时也是质点受到的惯性力​]]></content>
