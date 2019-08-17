@@ -59,26 +59,26 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="SCP&#39;s Notes">
-<meta property="og:url" content="http://yoursite.com/tags/Math/index.html">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="SCP&#39;s Notes">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SCP&#39;s Notes">
-  <link rel="canonical" href="http://yoursite.com/tags/Math/">
+  <link rel="canonical" href="http://yoursite.com/page/3/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
+    isHome: true,
     isPost: false,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签: Math | SCP's Notes</title>
+  <title>SCP's Notes</title>
   
 
 
@@ -189,21 +189,6 @@
 
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
     <div class="site-search">
       
   <div class="popup search-popup local-search-popup">
@@ -235,217 +220,249 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content ">
+          <div id="content" class="content page-home">
             
+  <section id="posts" class="posts-expand">
+      
 
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block tag">
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/绳索模型/">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Math<small>标签</small>
-        </h1>
-      </div>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SeniorCtrlPlayer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bear.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SCP's Notes">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/05/绳索模型/" class="post-title-link" itemprop="url">绳索滑体模型</a>
+              
+            
+          </h1>
         
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/08/17/车轮上端模糊下端清晰现象/" itemprop="url">
+              
+                
+              
+
+              <time title="创建时间：2019-08-05 22:05:08" itemprop="dateCreated datePublished" datetime="2019-08-05T22:05:08+08:00">2019-08-05</time>
+            </span>
+          
             
-              <span itemprop="name">平面图形上各点的速度分析</span>
+
             
-          </a>
-        
-      </h2>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-09 23:30:45" itemprop="dateModified" datetime="2019-08-09T23:30:45+08:00">2019-08-09</time>
+              </span>
+            
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-17T22:57:37+08:00"
-              content="2019-08-17">
-          08-17
-        </time>
-      </div>
+          <br>
 
-    </header>
-  </article>
+        </div>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+          <html>
+<head><meta name="generator" content="Hexo 3.9.0"> 
+<meta charset="utf-8"> 
+</head>
+<body>
+<center>
+<canvas id="myCanvas" width="600" height="300" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+	function draw(){
+        function drawline(ctx,sx,sy,ex,ey,interval=0){var d=[interval];ctx.beginPath();ctx.setLineDash(d);ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();ctx.closePath();ctx.setLineDash([]);}
+        function drawtrangle(ctx,x1,y1,x2,y2,x3,y3){ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.lineTo(x3,y3);ctx.fill();}
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        //draw y
+        drawline(ctx,300,300,300,20);
+        drawtrangle(ctx,305,20,295,20,300,0);
+        //draw x
+        drawline(ctx,50,200,550,200);
+        drawtrangle(ctx,550,205,550,195,570,200);
+        //曲线
+        //ctx.beginPath();
+        ctx.moveTo(150,0);//起始点
+        var cp1x=300, cp1y=300;
+        var x=450, y=0;//结束点
+        ctx.quadraticCurveTo(cp1x,cp1y,x,y);
+        ctx.stroke();
+        //虚线
+        drawline(ctx,150,200,150,0,10);
+        drawline(ctx,150,0,300,300,250);
+	}
+    draw()
+</script>
+</center>
+</body>
+</html>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/05/绳索模型/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/08/11/径向加速度应用/" itemprop="url">
-            
-              <span itemprop="name">径向加速度应用</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-11T15:51:04+08:00"
-              content="2019-08-11">
-          08-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/08/10/极坐标/" itemprop="url">
-            
-              <span itemprop="name">极坐标</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-10T21:39:23+08:00"
-              content="2019-08-10">
-          08-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/08/09/弹簧问题/" itemprop="url">
-            
-              <span itemprop="name">弹簧模型</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-09T23:59:50+08:00"
-              content="2019-08-09">
-          08-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/08/09/第二宇宙速度/" itemprop="url">
-            
-              <span itemprop="name">第二宇宙速度</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-09T09:43:16+08:00"
-              content="2019-08-09">
-          08-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/08/05/绳索模型/" itemprop="url">
-            
-              <span itemprop="name">绳索滑体模型</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-05T22:05:08+08:00"
-              content="2019-08-05">
-          08-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/08/04/test/" itemprop="url">
-            
-              <span itemprop="name">小船极坐标运动问题</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-04T14:27:15+08:00"
-              content="2019-08-04">
-          08-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
       
     </div>
 
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
   </div>
   
   
   
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/04/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SeniorCtrlPlayer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bear.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SCP's Notes">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/04/test/" class="post-title-link" itemprop="url">小船极坐标运动问题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-04 14:27:15" itemprop="dateCreated datePublished" datetime="2019-08-04T14:27:15+08:00">2019-08-04</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-09 23:36:44" itemprop="dateModified" datetime="2019-08-09T23:36:44+08:00">2019-08-09</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>超越曲线</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/04/test/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+  </section>
 
   
-
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
 
 
           </div>
@@ -607,6 +624,19 @@
 
   
 
+  
+    
+      
+        
+      
+    
+      
+    
+  
+    
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css">
+
+    
   
 
   

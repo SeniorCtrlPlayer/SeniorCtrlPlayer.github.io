@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[平面图形上各点的速度分析]]></title>
+    <url>%2F2019%2F08%2F17%2F%E8%BD%A6%E8%BD%AE%E4%B8%8A%E7%AB%AF%E6%A8%A1%E7%B3%8A%E4%B8%8B%E7%AB%AF%E6%B8%85%E6%99%B0%E7%8E%B0%E8%B1%A1%2F</url>
+    <content type="text"><![CDATA[基点法 符号 说明 rA\boldsymbol{r}_{A}rA​ 刚体上基点A相对于静系的位矢 rB\boldsymbol{r}_{B}rB​ 刚体上动点B相对于静系的位矢 r′\boldsymbol{r}^{\prime}r′ 刚体上动点B相对于基点A的位矢 vBA\boldsymbol{v}_{B A}vBA​ 刚体上动点B相对于基点A的速度矢量 rB=rA+r′r˙B=r˙A+r˙′vB=vA+ω×r′=vA+vBA\begin{aligned} \boldsymbol{r}_{B} &amp;=\boldsymbol{r}_{A}+\boldsymbol{r}^{\prime} \\ \dot{\boldsymbol{r}}_{B} &amp;=\dot{\boldsymbol{r}}_{A}+\dot{\boldsymbol{r}}^{\prime} \\ \boldsymbol{v}_{B} &amp;=\boldsymbol{v}_{A}+\boldsymbol{\omega} \times \boldsymbol{r}^{\prime} \\ &amp;=\boldsymbol{v}_{A}+\boldsymbol{v}_{B A} \end{aligned} rB​r˙B​vB​​=rA​+r′=r˙A​+r˙′=vA​+ω×r′=vA​+vBA​​ 速度投影定理 对基点法公式两侧同时点乘rAB\boldsymbol r_{AB}rAB​： vB⋅rAB=vA⋅rAB+vBA⋅rAB\boldsymbol{v}_{B} \cdot \boldsymbol{r}_{A B}=\boldsymbol{v}_{A} \cdot \boldsymbol{r}_{A B}+\boldsymbol{v}_{B A} \cdot \boldsymbol{r}_{A B} vB​⋅rAB​=vA​⋅rAB​+vBA​⋅rAB​ 其中vBA\boldsymbol{v}_{B A}vBA​垂直于rAB\boldsymbol{r}_{A B}rAB​ vB⋅rAB=vA⋅rABvAcos⁡α=vBcos⁡β\boldsymbol{v}_{B} \cdot \boldsymbol{r}_{A B}=\boldsymbol{v}_{A} \cdot \boldsymbol{r}_{A B}\\ v_{A} \cos \alpha=v_{B} \cos \beta vB​⋅rAB​=vA​⋅rAB​vA​cosα=vB​cosβ 定理：平面图形上任意两点的速度在这两点的连线上的投影相等 因为A，B是刚体上两点所以，A，B距离保持不变，速度投影定理对任意运动刚体都是适用的 瞬时速度中心 在刚体PAPAPA所在的直线上有且仅有一点C∗C^*C∗，这一点的相对速度vC∗Av_{C^*A}vC∗A​于牵连速度vAv_AvA​矢量大小相等，方向相反。 因此，C∗C^*C∗的绝对速度vC∗=0v_C{^*}=0vC​∗=0。C∗C^*C∗称为瞬心 一般情况 已知平面刚体上某两点速度矢量不平行，则过A， B两点分别作矢量vAv_AvA​和vBv_BvB​的垂直线，两垂直线交点即为瞬心 两速度矢量平行且方向相反 两速度矢量平行但不垂直于AB连线 问题 车轮上部模糊下部清晰 假设车匀速前进速度位v0v_0v0​，且在路面上的运动可近似看作为纯滚动，车轮的半径为RRR。 设：车轮与地面的接触点为AAA，即速度瞬心C∗C^*C∗，假设瞬时角速度为www。轮心OOO与车构成刚体，相对路面为平动，所以轮心OOO得速度为v0v_0v0​ 由v0=Rwv_0=Rwv0​=Rw得：w=v0Rw=\dfrac{v_0}{R}w=Rv0​​ 对于车轮缘上任意一点，假设与AAA的距离为rrr，该点速度为： v=r×w∣v∣=∣r∣w\boldsymbol v=\boldsymbol r\times\boldsymbol w\\ |\boldsymbol v|=|\boldsymbol r|w v=r×w∣v∣=∣r∣w 所以车轮上越接近AAA的点相对于地面的速度越小 注：瞬心为AAA也可用基点法证明]]></content>
+      <tags>
+        <tag>Physics</tag>
+        <tag>Math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[卷纸问题]]></title>
+    <url>%2F2019%2F08%2F16%2F%E5%8D%B7%E7%BA%B8%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[纸盘由厚度为bbb的纸条卷成，令纸盘的中心不动，而以等速vvv拉纸条。求：纸盘的角加速度(以半径rrr的函数表示)。 设：纸带盘角速度为ω\omegaω v=rω=常量ω=vrv=r \omega=常量\\ \omega=\frac{v}{r} v=rω=常量ω=rv​ 角速度对时间ttt求一阶导： ε=ω˙=−vr2r˙\varepsilon=\dot{\omega}=-\frac{v}{r^{2}} \dot{r} ε=ω˙=−r2v​r˙ 因为每转2π2\pi2π，rrr减少厚度bbb，则有： r=r0−φ2πbr˙=−φ˙2πb=−bω2π=−bv2πrr=r_{0}-\frac{\varphi}{2 \pi} b\\ \dot{r}=-\frac{\dot{\varphi}}{2 \pi} b=-\frac{b \omega}{2 \pi}=-\frac{b v}{2 \pi r} r=r0​−2πφ​br˙=−2πφ˙​​b=−2πbω​=−2πrbv​ 综上： ε=−bv22πr2\varepsilon=-\frac{bv^{2}}{2\pi r^{2}} ε=−2πr2bv2​]]></content>
+      <tags>
+        <tag>Physics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[泊松公式]]></title>
     <url>%2F2019%2F08%2F16%2F%E6%B3%8A%E6%9D%BE%E5%85%AC%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[刚体的定轴转动 b˙=ω×b\dot{\boldsymbol{b}}=\boldsymbol{\omega} \times \boldsymbol{b} b˙=ω×b 转动刚体上任一固连矢量在固定参考系内对时间的导数，等于刚体的角速度矢量与该矢量的矢积（叉乘）。 证明：设刚体以ω\boldsymbol\omegaω绕定轴zzz转动，b\boldsymbol bb为体上任一矢量，设矢量的起点AAA的位矢为：rA\boldsymbol r_ArA​，矢量终点BBB的位矢为：rB\boldsymbol r_BrB​ ∵r˙=v=ω×rb˙=r˙B−r˙A∴=ω×rB−ω×rA=ω×(rB−rA)=ω×b\begin{aligned}\because \dot{\boldsymbol{r}}&amp;=\boldsymbol{v}=\boldsymbol{\omega} \times \boldsymbol{r}\\ \dot{\boldsymbol{b}} &amp;=\dot{\boldsymbol{r}}_{B}-\dot{\boldsymbol{r}}_{A} \\ \therefore&amp;=\boldsymbol{\omega} \times \boldsymbol{r}_{B}-\boldsymbol{\omega} \times \boldsymbol{r}_{A} \\ &amp;=\boldsymbol{\omega} \times\left(\boldsymbol{r}_{B}-\boldsymbol{r}_{A}\right) \\ &amp;=\boldsymbol{\omega} \times \boldsymbol{b} \end{aligned} ∵r˙b˙∴​=v=ω×r=r˙B​−r˙A​=ω×rB​−ω×rA​=ω×(rB​−rA​)=ω×b​ 泊松公式推导极坐标中基矢量速度的表达式 设：k\boldsymbol kk是角矢量ω\boldsymbol \omegaω的单位矢量 e˙ρ=ωk×eρ=φ˙eφe˙φ=ωk×eφ=−φ˙eρ\begin{aligned} \dot{\boldsymbol{e}}_{\rho} &amp;=\omega \boldsymbol{k} \times \boldsymbol{e}_{\rho}=\dot{\varphi} \boldsymbol{e}_{\varphi} \\ \dot{\boldsymbol{e}}_{\varphi} &amp;=\omega \boldsymbol{k} \times \boldsymbol{e}_{\varphi}=-\dot{\varphi} \boldsymbol{e}_{\rho} \end{aligned} e˙ρ​e˙φ​​=ωk×eρ​=φ˙​eφ​=ωk×eφ​=−φ˙​eρ​​]]></content>
