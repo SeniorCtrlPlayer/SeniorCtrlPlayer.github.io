@@ -702,6 +702,14 @@ a_\varphi&amp;=\rho\ddot\varphi+2\dot\rho\dot\varphi
   <span class="author" itemprop="copyrightHolder">SeniorCtrlPlayer</span>
 </div>
 
+
+  <script src='https://unpkg.com/mermaid@/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize("");
+    }
+  </script>
+
         
 
 
@@ -771,6 +779,30 @@ a_\varphi&amp;=\rho\ddot\varphi+2\dot\rho\dot\varphi
 
 
 
+<script>
+function embedMermaid() {
+  mermaid.initialize({
+    theme: 'forest',
+    logLevel: 3,
+    flowchart: { curve: 'linear' },
+    gantt: { axisFormat: '%m/%d/%Y' },
+    sequence: { actorMargin: 50 }
+  });
+}
+if ($('body').find('pre.mermaid').length) {
+  if (mermaid) {
+    embedMermaid();
+  } else {
+    $.ajax({
+      type: 'GET',
+      url: '//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js',
+      dataType: 'script',
+      cache: true,
+      success: embedMermaid
+    });
+  }
+}
+</script>
 
 
 

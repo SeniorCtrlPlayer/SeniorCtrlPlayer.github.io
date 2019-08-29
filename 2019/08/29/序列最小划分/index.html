@@ -301,7 +301,16 @@
 <h2 id="数学重述"><a class="markdownIt-Anchor" href="#数学重述"></a> 数学重述</h2>
 <p>对于序列串s，若s能够分割成两个没有交集的子串，则进行分割，一直分割到任意子串都不能再进行分割</p>
 <p>将字母按首尾时间化为甘特图，分割点位于不会切割任意一个字母段的时间点，即CD交界处</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">    title A Gantt Diagram</span><br><span class="line">    dateFormat  YYYY-MM-DD</span><br><span class="line">    section ALL</span><br><span class="line">    A	:2000-01-01,5d</span><br><span class="line">    B	:2000-01-02,3d</span><br><span class="line">    C	:2000-01-03,5d</span><br><span class="line">    D 	:2000-01-08,4d</span><br><span class="line">    E	:2000-01-10,3d</span><br><span class="line">    F	:2000-01-09,2d</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section ALL
+    A	:2000-01-01,5d
+    B	:2000-01-02,3d
+    C	:2000-01-03,5d
+    D 	:2000-01-08,4d
+    E	:2000-01-10,3d
+    F	:2000-01-09,2d</pre>
 <h2 id="伪代码说明"><a class="markdownIt-Anchor" href="#伪代码说明"></a> 伪代码说明</h2>
 <ol>
 <li>
@@ -462,6 +471,14 @@
   <span class="author" itemprop="copyrightHolder">SeniorCtrlPlayer</span>
 </div>
 
+
+  <script src='https://unpkg.com/mermaid@/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize("");
+    }
+  </script>
+
         
 
 
@@ -531,6 +548,30 @@
 
 
 
+<script>
+function embedMermaid() {
+  mermaid.initialize({
+    theme: 'forest',
+    logLevel: 3,
+    flowchart: { curve: 'linear' },
+    gantt: { axisFormat: '%m/%d/%Y' },
+    sequence: { actorMargin: 50 }
+  });
+}
+if ($('body').find('pre.mermaid').length) {
+  if (mermaid) {
+    embedMermaid();
+  } else {
+    $.ajax({
+      type: 'GET',
+      url: '//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js',
+      dataType: 'script',
+      cache: true,
+      success: embedMermaid
+    });
+  }
+}
+</script>
 
 
 
