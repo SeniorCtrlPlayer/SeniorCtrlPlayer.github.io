@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[微体积换元]]></title>
+    <url>%2F2019%2F09%2F02%2F%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E5%9D%90%E6%A0%87%E6%8D%A2%E5%85%83%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[空间直角坐标系 dv=dxdydzdv=dxdydz dv=dxdydz 柱坐标系 {x=ρcos⁡θy=ρsin⁡θz=z\left\{ \begin{aligned} x&amp;=\rho\cos\theta\\ y&amp;=\rho\sin\theta\\ z&amp;=z \end{aligned} \right. ⎩⎪⎨⎪⎧​xyz​=ρcosθ=ρsinθ=z​ 在两个坐标系下总有下列公式成立 dv=ds×dzds=ρdρdθdv=ds\times dz\\ ds=\rho d\rho d\theta dv=ds×dzds=ρdρdθ 其中dzdzdz在柱坐标系和空间直角坐标系是相同的 球坐标系 {x=ρsin⁡φcos⁡θy=ρsin⁡φsin⁡θz=ρcos⁡φ\left\{ \begin{aligned} x&amp;=\rho\sin\varphi\cos\theta\\ y&amp;=\rho\sin\varphi\sin\theta\\ z&amp;=\rho\cos\varphi \end{aligned} \right. ⎩⎪⎨⎪⎧​xyz​=ρsinφcosθ=ρsinφsinθ=ρcosφ​ 微小半径差值为dρd\rhodρ，微小元球面面积dsdsds： ds=ρdφ×ρsin⁡φdθds=\rho d\varphi\times\rho\sin\varphi d\theta ds=ρdφ×ρsinφdθ 微小体积元dvdvdv： dv=ds×dρ=ρ2sin⁡φdφdθdρ\begin{aligned} dv&amp;=ds\times d\rho\\ &amp;=\rho^2\sin\varphi d\varphi d\theta d\rho \end{aligned} dv​=ds×dρ=ρ2sinφdφdθdρ​ 则球壳体积为： {∫02πsin⁡φ=2∫02πθ=2πv=∫ρ0ρ4πρ2dρ\left\{ \begin{aligned} &amp;\int_{0}^{2\pi}\sin\varphi=2\\ &amp;\int_{0}^{2\pi}\theta=2\pi \end{aligned} \right.\\ v=\int_{\rho_0}^{\rho}4\pi\rho^2d\rho ⎩⎪⎪⎪⎨⎪⎪⎪⎧​​∫02π​sinφ=2∫02π​θ=2π​v=∫ρ0​ρ​4πρ2dρ]]></content>
+      <tags>
+        <tag>Math</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[泰勒公式]]></title>
     <url>%2F2019%2F08%2F29%2F%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80%E5%8F%8A%E4%BD%99%E9%A1%B9%2F</url>
     <content type="text"><![CDATA[泰勒展开 问题引入： 对于函数： f(x)=sin⁡xf(x)=\sin x f(x)=sinx 在特殊点π3,π2,π\frac{\pi}{3},\frac{\pi}{2},\pi3π​,2π​,π的函数值容易计算，对于任意点的函数值不易计算 思考： 幂函数是便于手工计算的，是否能用多个幂函数的叠加代替sin⁡x\sin xsinx在任意点的值 设f(x)f(x)f(x)在x0x_0x0​处有nnn阶导数，且f(x0)=a0f(x_0)=a_0f(x0​)=a0​，试求出能代替f(x)f(x)f(x)的近似表达式$$ 为了让Pn(x)P_n(x)Pn​(x)具有一下特性： 特性 对应要求 Pn(x0)=f(x0)P_n(x_0)=f(x_0)Pn​(x0​)=f(x0​) 存在第一项为a0a_0a0​，余下项都包含因子(x−x0)(x-x_0)(x−x0​) Pn(n)(x)=C,(C≠0)P_{n}^{(n)}(x)=C,(C\neq0)Pn(n)​(x)=C,(C​=0)，CCC为常数 第n+1n+1n+1项含有xnx^nxn 为便于计算，第n+2n+2n+2项的nnn阶导为000 第n+2n+2n+2项的幂函数部分为(x−x0)(n+1)(x-x_0)^{(n+1)}(x−x0​)(n+1) 不妨设： Pn(x)=a0+a1(x−x0)+⋯+an(x−x0)nP_n(x)=a_0+a_1(x-x_0)+\cdots+a_n(x-x_0)^n Pn​(x)=a0​+a1​(x−x0​)+⋯+an​(x−x0​)n 为使f(n)(x0)=Pn(n)(x0)f^{(n)}(x_0)=P_{n}^{(n)}(x_0)f(n)(x0​)=Pn(n)​(x0​)，且满足上述特性，则有： f(n)(x0)=Pn(n)(x0)=n!anf^{(n)}(x_0)=P_{n}^{(n)}(x_0)=n!a_n\\ f(n)(x0​)=Pn(n)​(x0​)=n!an​ 综上： an=f(n)(x0)n!a_n=\dfrac{f^{(n)}(x_0)}{n!} an​=n!f(n)(x0​)​ 缩小泰勒展开近似表达式的误差 所求具体的xxx尽量接近展开中心x0x_0x0​ 若无法决定展开中心x0x_0x0​，使用更高阶的多项式近似代替 余项 问题引入： 对sin⁡x\sin xsinx的近似代替式的误差有精度要求]]></content>
